@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:viewmodel="clr-namespace:NO_Selector.viewmodel"
+             x:DataType="viewmodel:MainPageVM"
+             x:Class="NO_Selector.view.MainPage"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             Title="{Binding Title}">
+
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="{StaticResource WhatsAppTealDark}"/>
+    </ContentPage.Behaviors>
+
+    <Grid
+        RowDefinitions="190,*"
+        BackgroundColor="WhiteSmoke"
+        >
+
+        <VerticalStackLayout
+            Padding="20,20,20,20"
+            Margin="0,10,0,0"
+            Grid.Row="0"
+            >
+            <Label
+                Text="Enter Phone Number"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="{StaticResource WhatsAppTealDark}"
+            />
+
+            <Frame
+                >
+                <Entry
+                    HorizontalTextAlignment="Center"
+                    Keyboard="Numeric"
+                    Placeholder="e.g: 00923245322924"
+                    Text="{Binding Phonenumber}"                          
+                />
+            </Frame>
+
+        </VerticalStackLayout>
+
+
+
+
+        <Border
+            Grid.Row="1"
+            BackgroundColor="{StaticResource WhatsAppTealDark}"
+            StrokeShape="RoundRectangle 80,80,0,0"
+            
+            >
+
+
+            <Border
+                HeightRequest="150"
+                WidthRequest="150"
+                StrokeShape="RoundRectangle 80,80,80,80"
+                StrokeThickness="8"
+                
+                >
+
+                <Button
+                    BackgroundColor="{StaticResource WhatsAppLightGreen}"
+                    Text="Action"
+                    Command="{Binding ActionDeciderCommand}"
+                    />
+
+            </Border>
+        </Border>
+
+    </Grid>
+
+
+
+</ContentPage>
