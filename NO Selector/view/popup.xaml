@@ -4,13 +4,13 @@
              
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
               x:Class="NO_Selector.view.popup" >
-    <Frame HeightRequest="330"
+    <Frame HeightRequest="360"
            WidthRequest="300">
     <VerticalStackLayout>
-            <Image Source="courses.png"
-                   BackgroundColor="{StaticResource WhatsAppTealDark}"/>
+            <Image Source="courses.png"/>
             <Label Text="Version 1.0.0" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
-            <Label Text="Developed by Hammad Maqbool, Sardar Ammar Khan, Sardar Artish" FontSize="12" HorizontalTextAlignment="Center" TextColor="Black"/>
+            <Label Text="Developed By" FontSize="17" HorizontalTextAlignment="Center" TextColor="Black"/>
+            <Label Text=" Hammad Maqbool, Sardar Ammar Khan and Sardar Artish at Maqbool Courses Institute as a practice project." FontSize="12" HorizontalTextAlignment="Center" TextColor="Black"/>
         </VerticalStackLayout>
     </Frame>
 </toolkit:Popup>
