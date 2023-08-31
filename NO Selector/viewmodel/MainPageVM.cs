@@ -80,6 +80,6 @@ namespace NO_Selector.viewmodel
             var popups = new popup(new MainPageVM());
             Shell.Current.CurrentPage.ShowPopup(popups);
         }
-
+        //this is the comment I am adding in code.
     }
 }
