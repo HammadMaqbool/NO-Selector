@@ -9,5 +9,7 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         BindingContext = mainpagevm;
     }
+
+   
 }
 

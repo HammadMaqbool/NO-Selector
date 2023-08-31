@@ -1,10 +1,13 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-
+using Microsoft.Maui.Controls.Xaml;
+using NO_Selector.view;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NO_Selector.view;
 using System.Threading.Tasks;
 
 namespace NO_Selector.viewmodel
@@ -69,6 +72,13 @@ namespace NO_Selector.viewmodel
             {
                 openWhatsApp();
             }
+        }
+        [RelayCommand]
+        public void Poopupopener()
+        {
+
+            var popups = new popup(new MainPageVM());
+            Shell.Current.CurrentPage.ShowPopup(popups);
         }
 
     }
