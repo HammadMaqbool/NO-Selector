@@ -64,7 +64,7 @@
                 >
 
                 <Button
-                    BackgroundColor="{StaticResource WhatsAppLightGreen}"
+                    BackgroundColor="{StaticResource WhatsAppTealLite}"
                     Text="Action"
                     Command="{Binding ActionDeciderCommand}"
                     />
