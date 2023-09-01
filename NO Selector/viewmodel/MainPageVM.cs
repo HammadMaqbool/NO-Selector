@@ -21,7 +21,7 @@ namespace NO_Selector.viewmodel
         {
             if (!String.IsNullOrEmpty(Phonenumber))
             {
-
+              
                 string completelink = "https://wa.me/" + Phonenumber;
                 Launcher.OpenAsync(completelink).Wait();
             }
