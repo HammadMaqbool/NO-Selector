@@ -57,6 +57,7 @@ namespace NO_Selector.viewmodel
         [RelayCommand]
         public async Task ActionDecider()
         {
+            Vibration.Default.Vibrate();
             string result = await Shell.Current.DisplayActionSheet("Select Action", "Cancle", null, "Call", "SMS", "WhatsApp");
 
             if (result.Equals("Call"))
