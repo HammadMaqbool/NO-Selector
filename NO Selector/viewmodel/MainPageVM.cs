@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NO_Selector.view;
 using System.Threading.Tasks;
 
 namespace NO_Selector.viewmodel
