@@ -10,7 +10,13 @@
     <ContentPage.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="{StaticResource WhatsAppTealDark}"/>
     </ContentPage.Behaviors>
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            IconImageSource="about.png"
+            Order="Primary"
+            Command="{Binding PoopupopenerCommand}"
+            />
+    </ContentPage.ToolbarItems>
     <Grid
         RowDefinitions="190,*"
         BackgroundColor="WhiteSmoke"
@@ -21,11 +27,7 @@
             Margin="0,10,0,0"
             Grid.Row="0"
             >
-            <ImageButton
-                Source="about.png"
-                HorizontalOptions="End"
-                Command="{Binding PoopupopenerCommand}"
-                VerticalOptions="Center"/>
+            
             <Label
                 Text="Enter Phone Number"
                 HorizontalOptions="CenterAndExpand"
