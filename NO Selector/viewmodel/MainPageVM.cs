@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace NO_Selector.viewmodel
 {
@@ -81,5 +82,10 @@ namespace NO_Selector.viewmodel
             Shell.Current.CurrentPage.ShowPopup(popups);
         }
         //this is the comment I am adding in code.
+        [RelayCommand]
+        public void ClearEntryCommand()
+        {
+            Phonenumber= string.Empty;
+        }
     }
 }
