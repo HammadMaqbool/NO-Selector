@@ -39,6 +39,7 @@
             <Frame
                 >
                 <Entry
+                    
                     HorizontalTextAlignment="Center"
                     Keyboard="Numeric"
                     Placeholder="e.g: 00923245322924"
@@ -73,8 +74,48 @@
 
             </Border>
         </Border>
+        <Border
+            
+                Grid.Row="1"
+                Margin="275,0,0,0"
+                HeightRequest="80"
+                WidthRequest="80"
+                StrokeShape="RoundRectangle 80,80,80,80"
+                StrokeThickness="8"
+                
+                >
+
+            <ImageButton
+                    Source="fist.png"
+                HorizontalOptions="CenterAndExpand"
+                   
+                    />
+
+        </Border>
+        <Border
+            
+                Grid.Row="1"
+                Margin="-275,0,0,0"
+            
+                HeightRequest="80"
+                WidthRequest="80"
+                StrokeShape="RoundRectangle 80,80,80,80"
+                StrokeThickness="8"
+                
+                >
+
+            <ImageButton
+                    Source="clear.png"
+                    HorizontalOptions="CenterAndExpand"
+                    
+                    Command="{Binding ClearEntryCommandCommand}"
+                   
+                    />
+
+        </Border>
 
     </Grid>
+    
 
 
 
