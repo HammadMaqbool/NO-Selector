@@ -75,22 +75,19 @@
             </Border>
         </Border>
         <Border
-            
                 Grid.Row="1"
                 Margin="275,0,0,0"
                 HeightRequest="80"
                 WidthRequest="80"
                 StrokeShape="RoundRectangle 80,80,80,80"
-                StrokeThickness="8"
-                
+                StrokeThickness="0"
+                BackgroundColor="White"
                 >
 
             <ImageButton
                     Source="fist.png"
-                HorizontalOptions="CenterAndExpand"
-                   
+                    HorizontalOptions="CenterAndExpand"
                     />
-
         </Border>
         <Border
             
@@ -100,16 +97,14 @@
                 HeightRequest="80"
                 WidthRequest="80"
                 StrokeShape="RoundRectangle 80,80,80,80"
-                StrokeThickness="8"
-                
+                StrokeThickness="0"
+            BackgroundColor="White"
                 >
 
             <ImageButton
                     Source="clear.png"
                     HorizontalOptions="CenterAndExpand"
-                    
                     Command="{Binding ClearEntryCommandCommand}"
-                   
                     />
 
         </Border>
