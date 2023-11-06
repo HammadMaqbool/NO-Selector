@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace NO_Selector.viewmodel
 {
@@ -21,7 +22,7 @@ namespace NO_Selector.viewmodel
         {
             if (!String.IsNullOrEmpty(Phonenumber))
             {
-
+              
                 string completelink = "https://wa.me/" + Phonenumber;
                 Launcher.OpenAsync(completelink).Wait();
             }
@@ -81,5 +82,16 @@ namespace NO_Selector.viewmodel
             Shell.Current.CurrentPage.ShowPopup(popups);
         }
         //this is the comment I am adding in code.
+        [RelayCommand]
+        public void ClearEntryCommand()
+        {
+            string Number = Phonenumber;
+            string FinalResult = "";
+            if (Number.Length > 0)
+            {
+               FinalResult = Number.Substring(0, Number.Length - 1);
+            }
+            Phonenumber = FinalResult;
+        }
     }
 }
