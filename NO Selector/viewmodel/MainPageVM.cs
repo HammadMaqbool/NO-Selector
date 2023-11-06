@@ -85,7 +85,13 @@ namespace NO_Selector.viewmodel
         [RelayCommand]
         public void ClearEntryCommand()
         {
-            Phonenumber= string.Empty;
+            string Number = Phonenumber;
+            string FinalResult = "";
+            if (Number.Length > 0)
+            {
+               FinalResult = Number.Substring(0, Number.Length - 1);
+            }
+            Phonenumber = FinalResult;
         }
     }
 }
