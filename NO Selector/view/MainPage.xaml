@@ -8,7 +8,7 @@
              Title="{Binding Title}">
 
     <ContentPage.Behaviors>
-        <mct:StatusBarBehavior StatusBarColor="{StaticResource WhatsAppTealDark}"/>
+        <mct:StatusBarBehavior StatusBarColor="{AppThemeBinding Light={StaticResource WhatsAppTealLite}, Dark={StaticResource WhatsAppTealDark}}"/>
     </ContentPage.Behaviors>
     <ContentPage.ToolbarItems>
         <ToolbarItem
